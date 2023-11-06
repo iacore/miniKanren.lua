@@ -1,4 +1,5 @@
 local MK = require("mk")
+local inspect = require("inspect")
 local run = MK.run
 local run_all = MK.run_all
 local eq = MK.eq
@@ -145,7 +146,7 @@ local l = {
    v(), v(), 1  , 2  ,
 }
 
-sudoku_4x4(l)
+print(inspect(sudoku_4x4(l)))
 
 -- { 1, 4, 2, 3,
 --   3, 2, 4, 1,
